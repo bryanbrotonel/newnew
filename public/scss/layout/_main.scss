@@ -1,0 +1,10 @@
+// sass --watch public/scss/layout/_main.scss:public/css/styles.css
+@import 'header';
+@import 'footer';
+@import '../components/typography';
+
+html, body {
+  background-color: #fff;
+  font-weight: 100;
+  min-height: 100%;
+}
