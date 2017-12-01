@@ -42,8 +42,10 @@
             <div class="column toc item">
               <i class="icon sidebar"></i>
             </div>
-            <div class="column mobileCenter">
-              <h3>new new</h3>
+            <div class="column textCenter">
+              <a href="/">
+                <h3>new new</h3>
+              </a>
             </div>
           </div>
         </div>
