@@ -15,12 +15,6 @@ Route::get('/', function () {
     return view('pages.welcome');
 });
 
-Route::get('profile', function () {
-  return view('pages.profile');
-});
-
-Route::resource('profile', 'ArtistProfileController@show');
-
 Route::get('motive', function () {
   return view('pages.motive');
 });
@@ -31,4 +25,8 @@ Route::get('contact', function () {
 
 Route::get('login', function () {
   return view('pages.login');
+});
+
+Route::get('dashboard', function () {
+  return view('pages.dashboard');
 });
