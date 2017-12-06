@@ -16,7 +16,7 @@ $(document).ready(function() {
 		//Sign In
 		firebase.auth().signInWithEmailAndPassword(email, pass).then(function() {
 			// Redirect to Dashboard
-			window.location = "dashbard";
+			window.location = "dashboard";
 
 			// Display button
 			logoutButton.style.display = "inherit";
