@@ -30,10 +30,9 @@
       </div>
     </div>
     <div class="text-center pt-4">
-      <h4>Let's build</h4>
-      <a href="mailto:hello@bryanbrotonel.me">hello@bryanbrotonel.me</a>
-      <br>
       <a href="https://www.instagram.com/bryanbrotonel/" target="_blank">@bryanbrotonel</a>
+      <br>
+      <a href="mailto:hello@bryanbrotonel.me">hello@bryanbrotonel.me</a>
     </div>
   </div>
 @stop
