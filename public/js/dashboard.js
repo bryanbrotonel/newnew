@@ -13,11 +13,38 @@ $(document).ready(function() {
 			const artistImage = document.getElementById('artistImage');
 			const artistSoundCloud = document.getElementById('artistSoundCloud');
 			const artistInstagram = document.getElementById('artistInstagram');
-			const submitArtist = document.getElementById('submitArtist');
+			const addArtist = document.getElementById('addArtist');
 
 			const inboxList = document.getElementById('inboxList');
 			const artistList = document.getElementById('artistList');
 
+
+			// Sync artist list
+			firebase
+				.database()
+				.ref('artists/artists_list')
+				.orderByChild('posted')
+				.on('child_added', function(data) {
+					firebase
+						.database()
+						.ref('artists/posts/' + data.key)
+						.on('value', function(artistData) {
+							var li = document.createElement("LI");
+							li.innerText = artistData.val().name;
+							artistList.append(li);
+						});
+				});
+
+			// Sync inbox list
+			firebase
+				.database()
+				.ref('artists/inbox')
+				.orderByChild('posted')
+				.on('child_added', function(data) {
+					var li = document.createElement("LI");
+					li.innerText = data.val().artist + " by " + data.val().plug;
+					inboxList.append(li);
+				});
 			// Sign up Validation
 			signupButton.addEventListener('click', e => {
 
@@ -50,8 +77,8 @@ $(document).ready(function() {
 				}
 			});
 
-      // Submit artists
-			submitArtist.addEventListener('click', function() {
+			// Submit artists
+			addArtist.addEventListener('click', function() {
 				// Get Artist vales
 				var artistNameVal = artistName.value;
 				var artistDescriptionVal = artistDescription.value;
@@ -84,9 +111,6 @@ $(document).ready(function() {
 					.database()
 					.ref()
 					.update(updates)
-					.then(function() {
-						alert('Added ' + artistNameVal);
-					})
 					.catch(function(error) {
 						console.log(error);
 						alert(error.message)
