@@ -1,24 +1,69 @@
-.topHeader {
-  padding: 4vmin 0vmin; }
+/* Custom page header */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.header {
+  padding-top: 1.5rem;
+  border-bottom: .05rem solid #e5e5e5; }
 
-@media only screen and (max-width: 700px) {
-  .ui.secondary.menu.medium {
-    display: none !important; } }
-.ui.footer.segment {
-  margin: 3em 0 0;
-  padding: 3em;
-  bottom: 0;
-  width: 100%; }
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem; }
+
+/* Custom page footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  color: #777;
+  padding-top: 3vmin;
+  height: 60px;
+  /* Height of the footer */
+  border-top: 0.05rem solid #e5e5e5;
+  bottom: 0; }
+
+@media (max-width: 768px) {
+  .footer {
+    position: static; } }
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000; }
 
 a {
   color: inherit; }
 
-@media only screen and (max-width: 700px) {
-  .mobileCenter {
-    text-align: center; } }
+.artistimage {
+  height: 300px;
+  width: 300px; }
+
 html, body {
   background-color: #fff;
   font-weight: 100;
-  min-height: 100%; }
+  position: relative;
+  height: 100%; }
+
+.body {
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 60px; }
+
+.container {
+  min-height: 100%;
+  position: relative; }
+
+.form-body {
+  max-width: 330px; }
+
+.media {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.card {
+  width: 20rem; }
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem; } }
 
 /*# sourceMappingURL=styles.css.map */

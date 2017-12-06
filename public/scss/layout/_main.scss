@@ -2,9 +2,44 @@
 @import 'header';
 @import 'footer';
 @import '../components/typography';
+@import '../components/images';
 
 html, body {
   background-color: #fff;
   font-weight: 100;
+  position: relative;
+  height: 100%;
+}
+
+.body {
+  padding-top: 3vmin;
+  padding-bottom: 3vmin;
   min-height: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.form-body {
+  max-width: 330px;
+}
+
+.media {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  width: 20rem;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
 }

@@ -1,14 +1,11 @@
-.topHeader {
-  padding: 4vmin 0vmin;
+/* Custom page header */
+.header {
+  padding-top: 1.5rem;
+  border-bottom: .05rem solid #e5e5e5;
 }
 
-// .ui.large.secondary.menu {
-//   display: none;
-// }
-
-@media only screen and (max-width: 700px) {
-  .ui.secondary.menu.medium {
-    display: none !important;
-  }
-
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
 }
