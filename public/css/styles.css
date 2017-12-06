@@ -59,7 +59,12 @@ html, body {
   padding-bottom: 1.5rem; }
 
 .card {
-  width: 20rem; }
+  width: 20rem;
+  margin: 1vmin; }
+
+textarea {
+  resize: none;
+  height: 10em; }
 
 /* Customize container */
 @media (min-width: 48em) {
