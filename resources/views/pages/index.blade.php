@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('scripts')
-  <script src="{{ url('/js/index.js')}}"></script>
+  <script src="/js/index.js"></script>
 @stop
 
 

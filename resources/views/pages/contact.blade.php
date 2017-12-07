@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('scripts')
-  <script src="{{ url('/js/contact.js')}}"></script>
+  <script src="/js/contact.js"></script>
 @stop
 
 @section('title')
