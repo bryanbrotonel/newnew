@@ -4,11 +4,10 @@ $(document).ready(function() {
 		const postList = document.getElementById('postList');
 
 		// Create DOM elements
-		var listItem = document.createElement("li");
-		var imageWrapper = document.createElement("div");
+		var cardWrapper = document.createElement("div");
 		var image = document.createElement("img");
-		var contentWrapper = document.createElement("div");
-		var header = document.createElement("h4");
+		var cardBody = document.createElement("div");
+		var header = document.createElement("h5");
 		var paragraph = document.createElement("p");
 
 		// Create content elements
@@ -19,27 +18,28 @@ $(document).ready(function() {
 		var instagramContent = document.createTextNode(instagram);
 
 		// Append content to elements
-		paragraph.appendChild(artistDescriptionContent);
-
-		header.setAttribute("class", "mt-0");
-		header.appendChild(artistNameContent);
-
-		contentWrapper.setAttribute("class", "media-body col-md-7");
-		contentWrapper.appendChild(header);
-		contentWrapper.appendChild(paragraph);
-
-		image.setAttribute("class", "artistimage align-self-center mr-3");
+		image.setAttribute("class", "card-img-top");
 		image.setAttribute("src", artistImage);
+		image.setAttribute("alt", artistNameContent);
 		image.appendChild(artistImageContent);
 
-		imageWrapper.setAttribute("class", "col-md-5 mx-auto");
-		imageWrapper.appendChild(image);
+		paragraph.setAttribute("class", "card-text");
+		paragraph.appendChild(artistDescriptionContent);
 
-		listItem.setAttribute("class", "media row");
-		listItem.appendChild(imageWrapper);
-		listItem.appendChild(contentWrapper);
+		header.setAttribute("class", "card-title");
+		header.appendChild(artistNameContent);
 
-		postList.appendChild(listItem);
+		cardBody.setAttribute("class", "card-body");
+		cardBody.appendChild(header);
+		cardBody.appendChild(paragraph);
+
+
+		cardWrapper.setAttribute("class", "card");
+		cardWrapper.appendChild(image);
+		cardWrapper.appendChild(cardBody);
+
+		postList.appendChild(cardWrapper);
+
 	}
 
 	firebase
