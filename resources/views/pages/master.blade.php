@@ -63,7 +63,7 @@
 
       {{-- Body --}}
 
-      <div class="body">
+      <div class="body mx-auto">
         @yield('content')
       </div>
 
