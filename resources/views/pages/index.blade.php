@@ -10,11 +10,5 @@
 @stop
 
 @section('content')
-  <div class="max-auto">
-    <div id="postList" class="row">
-    </div>
-  </div>
-  <div class="mx-auto" style="width: 200px;">
-  Centered element
-</div>
+  <div id="postList" class="row"></div>
 @stop

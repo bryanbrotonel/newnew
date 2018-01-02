@@ -102,9 +102,4 @@ textarea {
   resize: none;
   height: 10em; }
 
-/* Customize container */
-@media (min-width: 48em) {
-  .container {
-    max-width: 70rem; } }
-
 /*# sourceMappingURL=app.css.map */

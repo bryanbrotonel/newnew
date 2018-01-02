@@ -70,24 +70,25 @@
       {{-- Footer --}}
 
       <div class="footer">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>New New is a platform where we shed light on new artists</p>
-            <p>Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>New New is a platform where we shed light on new artists</p>
+              <p>Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
+            </div>
+            <div class="col-sm-6 text-sm-right">
+              <h4>Links</h4>
+              <ul class="list-unstyled">
+                <li> <a href="login">Login</a></li>
+                <li> <a href="motive">About</a></li>
+                <li> <a href="contact">Contact</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-6 text-sm-right">
-            <h4>Links</h4>
-            <ul class="list-unstyled">
-              <li> <a href="login">Login</a></li>
-              <li> <a href="motive">About</a></li>
-              <li> <a href="contact">Contact</a></li>
-            </ul>
-          </div>
+          <p class="text-center">&copy; New New 2017</p>
         </div>
-        <p class="text-center">&copy; New New 2017</p>
       </div>
-    </div>
-
+        </div>
   </body>
 
 </html>

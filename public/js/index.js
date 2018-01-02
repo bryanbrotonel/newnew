@@ -33,8 +33,7 @@ $(document).ready(function() {
 		cardBody.appendChild(header);
 		cardBody.appendChild(paragraph);
 
-
-		cardWrapper.setAttribute("class", "card");
+		cardWrapper.setAttribute("class", "card mx-auto");
 		cardWrapper.appendChild(image);
 		cardWrapper.appendChild(cardBody);
 
