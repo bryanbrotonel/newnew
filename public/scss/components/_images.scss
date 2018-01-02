@@ -1,5 +1,7 @@
 .artistimage {
+  object-fit: none; // Do not scale the image
+  object-position: center; // Center the image within the element
   height: 300px;
-  width: 300px;
+  width: 100%;
   // margin-bottom: 1.5rem;
 }

@@ -10,8 +10,11 @@
 @stop
 
 @section('content')
-  <div>
-    <ul id="postList" class="list-unstyled">
-    </ul>
+  <div class="max-auto">
+    <div id="postList" class="row">
+    </div>
   </div>
+  <div class="mx-auto" style="width: 200px;">
+  Centered element
+</div>
 @stop
