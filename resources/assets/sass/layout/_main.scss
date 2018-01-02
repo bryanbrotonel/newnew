@@ -40,11 +40,16 @@ html, body {
 
 textarea {
   resize: none;
-  height: 10em; }
+  height: 10em;
+}
 
 // /* Customize container */
-// @media (min-width: 48em) {
-//   .container {
-//     max-width: 70rem;
-//   }
-// }
+@media (min-width: 48em) {
+  .about {
+    max-width: 30rem;
+  }
+  
+  .container {
+    max-width: 70rem;
+  }
+}

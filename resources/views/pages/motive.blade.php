@@ -5,14 +5,19 @@
 @stop
 
 @section('content')
+<div class="about mx-auto">
   <div class="text-center">
     <h3>Motive</h3>
+    <br>
     <div>
-      <p>Lorem ipsum dolor sit amet, feugiat arcu dui, vestibulum laoreet. Scelerisque doloribus. Cursus orci phasellus. Vestibulum nibh, ligula justo, iaculis mauris congue. Dui sit, wisi magna.</p>
-      <p>Est magna vestibulum. Id quisque penatibus, inceptos ligula euismod. Suscipit justo praesent, vestibulum felis. Montes amet. Ac sed. Habitasse eget, sit ipsum egestas.</p>
-      <p>In a, eu lacus, diam pellentesque nulla. Donec odio, feugiat aliquet fames, justo integer quis. Tortor praesent, justo maecenas convallis, consequat malesuada. Id nibh porta. Vitae purus, pede phasellus.</p>
-      <p>Vehicula amet tincidunt, dignissim nullam, vel iaculis. Quisque nullam, sed augue. Nisl pulvinar ante, dolor lectus amet. Congue risus nibh, maecenas in. Bibendum habitasse nunc, est condimentum, habitant quisque integer.</p>
-      <p>Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
+      <p>New New is a platform where we shed light on new artists.</p>
+      <p>The motive behind New New is to share new sounds with the world as music
+        is one of the best gifts we can share with others.</p>
+      <p>We believe that mainstream media only scratches the surface of the best
+        sounds out there. There are plenty of sounds and artists that have yet to be discovered.</p>
+      <p>From emecees, to artists, to producers, we got you covered.<br> These are the internet's hidden gems.</p>
+      <p><small>Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></small></p>
     </div>
   </div>
+</div>
 @stop

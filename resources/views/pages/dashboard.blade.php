@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-sm">
       <div class="card-column mb-4">
-        <div class="card">
+        <div class="card mx-auto">
           <div class="card-body" action="">
             <div class="text-center mb-3">
               <h5>Add New Artist</h5>
@@ -38,7 +38,7 @@
             <button id="addArtist" class="btn btn-primary">Submit</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card mx-auto">
           <form action="" class="card-body">
             <div class="text-center mb-3">
               <h5>Sign Up New Devs</h5>
@@ -59,7 +59,7 @@
     </div>
     <div class="col-sm">
       <div class="card-column mb-4">
-        <div class="card">
+        <div class="card mx-auto">
           <div class="card-body">
             <div class="text-center-mb-3">
               <h5>Inbox</h5>
@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card mx-auto">
         <div class="card-body">
           <div class="text-center-mb-3">
             <h5>Artist List</h5>

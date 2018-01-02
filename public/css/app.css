@@ -102,4 +102,11 @@ textarea {
   resize: none;
   height: 10em; }
 
+@media (min-width: 48em) {
+  .about {
+    max-width: 30rem; }
+
+  .container {
+    max-width: 70rem; } }
+
 /*# sourceMappingURL=app.css.map */
