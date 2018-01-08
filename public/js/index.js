@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	function createPost(artistName, artistDescription, artistImage, soundcloud, instagram, date) {
+	function createPost(artistName, artistDescription, artistImage, soundcloud, instagram, date, author) {
 		const postList = document.getElementById('postList');
 
 		// Create DOM elements
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		var artistImageContent = document.createTextNode(artistImage)
 		var soundcloudContent = document.createTextNode(soundcloud);
 		var instagramContent = document.createTextNode(instagram);
-		var metadataContent = document.createTextNode(date)
+		var metadataContent = document.createTextNode("by " + author + " / " + date)
 
 		// Append content to elements
 		header.setAttribute("class", "card-title");
@@ -84,6 +84,9 @@ $(document).ready(function() {
       // Format date
 			var date = curr_month + ' ' + curr_day + ", " + curr_year;
 
+      // Get author
+			var author = data.val().author;
+
 			firebase
 				.database()
 				.ref('artists/posts/' + data.key)
@@ -97,7 +100,7 @@ $(document).ready(function() {
 					const instagram = artistData.val().instagram;
 
 					// Create artist post
-					createPost(name, description, image, soundcloud, instagram, date);
+					createPost(name, description, image, soundcloud, instagram, date, author);
 				});
 		});
 });
