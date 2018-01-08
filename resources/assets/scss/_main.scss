@@ -1,8 +1,10 @@
-// sass --watch public/scss/layout/_main.scss:public/css/app.css
-@import 'header';
-@import 'footer';
-@import '../components/typography';
-@import '../components/images';
+// sass --watch resources/assets/scss/_main.scss:public/css/styles.css
+@import 'helpers/variables';
+@import 'helpers/mixins';
+// @import 'layout/header';
+@import 'layout/footer';
+@import 'components/typography';
+@import 'components/images';
 
 html, body {
   background-color: #fff;
@@ -40,16 +42,4 @@ html, body {
 
 textarea {
   resize: none;
-  height: 10em;
-}
-
-// /* Customize container */
-@media (min-width: 48em) {
-  .about {
-    max-width: 30rem;
-  }
-  
-  .container {
-    max-width: 70rem;
-  }
-}
+  height: 10em; }
