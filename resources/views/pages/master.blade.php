@@ -72,11 +72,12 @@
       <div class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
-              <p>New New is a platform where we shed light on new artists</p>
-              <p>Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
+            <div class="col-lg-6">
+              <h3>New New</h3>
+              <p>New New is a platform where we shed light on new artists<br>
+                Curated by <a target="_blank" href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
             </div>
-            <div class="col-sm-6 text-sm-right">
+            <div class="col-lg-6 text-sm-left">
               <h4>Links</h4>
               <ul class="list-unstyled">
                 <li> <a href="login">Login</a></li>
@@ -85,8 +86,14 @@
               </ul>
             </div>
           </div>
-          <p class="text-center">&copy; New New 2017</p>
-        </div>
+          <p class="text-center"> &copy;
+            <!-- Dynamic copyright -->
+            <script>
+              var currentYear = new Date().getFullYear();
+              document.write(currentYear);
+            </script>, Club Forte, All Rights Reserved.<br>
+            Made by <a href="http://bryanbrotonel.me">Bryan Brotonel</a></p>
+           </div>
       </div>
         </div>
   </body>
