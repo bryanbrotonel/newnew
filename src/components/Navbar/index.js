@@ -13,8 +13,8 @@ import { NavLink as RRNavLink } from "react-router-dom";
 import "./styles.css";
 
 export class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.toggle = this.toggle.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -83,12 +83,12 @@ export class NavBar extends React.Component {
     });
 
     return (
-      <div class="container">
-        <Navbar light="light" expand="md">
+      <div className="container">
+        <Navbar light={true} expand="md">
           <NavbarBrand href="/">New New</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar="navbar">
-            <Nav className="ml-auto" navbar="navbar">
+          <Collapse isOpen={this.state.isOpen} navbar={true}>
+            <Nav className="ml-auto" navbar={true}>
               {navLinks}
             </Nav>
           </Collapse>
