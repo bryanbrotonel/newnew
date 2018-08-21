@@ -8,7 +8,6 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
-
 import { NavLink as RRNavLink } from "react-router-dom";
 
 import "./styles.css";
