@@ -8,12 +8,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Added motive page layout
 - New New logo and favicon
+- Renamed Contact to Share
+
+### Removed
+- Removed Contact folder
 
 ## 0.0.2 - 2018-08-21, 2018-08-26
 ### Added
 - React-dom dependecy
 - Motive page setup
-- Contact page setup
+- Share page setup
 - Home page setup
 - Respective loadable components
 - Respective page routing

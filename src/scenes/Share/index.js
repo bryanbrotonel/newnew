@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Contact extends React.Component {
+export default class Share extends React.Component {
   constructor() {
     super();
     this.componentDidMount = this.componentDidMount.bind(this);
@@ -8,13 +8,13 @@ export default class Contact extends React.Component {
 
   componentDidMount() {
     // Change page title
-    document.title = "New New | Contact"
+    document.title = "New New | Share"
   }
 
   render() {
     return (
       <div className="container">
-        <h5>@newnew</h5>
+        <h5>Share</h5>
       </div>
     )
   }
