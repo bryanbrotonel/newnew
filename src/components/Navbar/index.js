@@ -85,7 +85,13 @@ export class NavBar extends React.Component {
     return (
       <div className="container">
         <Navbar light={true} expand="md">
-          <NavbarBrand href="/">New New</NavbarBrand>
+          <NavbarBrand href="/">
+            <img
+              src={require("img/logo.png")}
+              height="30"
+              alt="New New Logo"
+            />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar={true}>
             <Nav className="ml-auto" navbar={true}>

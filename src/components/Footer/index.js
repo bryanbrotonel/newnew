@@ -12,7 +12,6 @@ export class Footer extends React.Component {
         <hr />
         <div className="row justify-content-between">
           <div className="col-md-3">
-            <h4>New New</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
               deleniti error quia maiores consectetur veritatis quis quaerat, at
