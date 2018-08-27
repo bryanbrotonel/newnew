@@ -19,8 +19,8 @@ export class Footer extends React.Component {
           <div className="col-md-3">
             <ul className="list-unstyled">
               <li><a href="./home">Home</a></li>
-              <li><a href="./share">Share</a></li>
               <li><a href="./motive">Motive</a></li>
+              <li><a href="./share">Share</a></li>
             </ul>
           </div>
         </div>

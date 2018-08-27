@@ -1,1 +1,11 @@
 @import "scss/modules/all";
+
+.hv-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-center {
+  margin: 0 auto;
+}

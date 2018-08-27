@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added motive page layout
 - New New logo and favicon
 - Renamed Contact to Share
+- Added form input component
+- Added share form front end
+- Added share page description
 
 ### Removed
 - Removed Contact folder
