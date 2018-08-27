@@ -53,12 +53,6 @@ export class NavBar extends React.Component {
     }
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth });
   }

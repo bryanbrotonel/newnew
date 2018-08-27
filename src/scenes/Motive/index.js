@@ -8,7 +8,7 @@ export default class Motive extends React.Component {
 
   componentDidMount() {
     // Change page title
-    document.title = "New New | Motive"
+    document.title = "New New | Motive";
   }
 
   render() {
@@ -19,12 +19,24 @@ export default class Motive extends React.Component {
             <h4>New New</h4>
           </div>
           <div className="col-sm-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nam temporibus perferendis, mollitia itaque veniam qui minima molestias officiis necessitatibus dicta nihil recusandae labore ducimus at in ipsum quia. Illum.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              nam temporibus perferendis, mollitia itaque veniam qui minima
+              molestias officiis necessitatibus dicta nihil recusandae labore
+              ducimus at in ipsum quia. Illum.
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, reiciendis, ipsa. Temporibus quibusdam, officiis molestiae quam voluptate omnis iste tempora voluptatum magnam accusantium! Repellendus possimus enim quos officiis, sed deserunt.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+              reiciendis, ipsa. Temporibus quibusdam, officiis molestiae quam
+              voluptate omnis iste tempora voluptatum magnam accusantium!
+              Repellendus possimus enim quos officiis, sed deserunt.
+            </p>
+            <p>
+              <a href="https://bryanbrotonel.me" target="_blank" rel="noopener noreferrer">@bryanbrotonel</a>
+            </p>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
