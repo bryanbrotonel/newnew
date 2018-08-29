@@ -8,11 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Added home page layout
 - Added artist card component
-- Added social media icons to artist cards
+- Added social media [icons](https://fontawesome.com/) to artist cards
+- New New theme colours
 
 ### Changed
 - Changed sharing name to handle
-- Changed card to use reactstrap card
+- Changed card to use [reactstrap](https://reactstrap.github.io/) card
 
 ## 0.0.3 - 2018-08-26
 ### Added

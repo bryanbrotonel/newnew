@@ -1,0 +1,39 @@
+// Link styling
+
+.app {
+  color: $black;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $black;
+  }
+}
+
+// Footer link styling
+.footer,
+.navbar {
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+// Artist Card styling
+.artist-card {
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $tertiary;
+    }
+  }
+}

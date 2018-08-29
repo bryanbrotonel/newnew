@@ -78,7 +78,7 @@ export class NavBar extends React.Component {
 
     return (
       <div className="container">
-        <Navbar light={true} expand="md">
+        <Navbar light expand="md">
           <NavbarBrand href="/">
             <img
               src={require("img/logo.png")}

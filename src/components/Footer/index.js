@@ -25,7 +25,7 @@ export class Footer extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className=" w-100 text-center text-muted">
+          <div className=" w-100 text-center">
             <p>&#169; New New {new Date().getFullYear()}</p>
           </div>
         </div>
