@@ -77,14 +77,10 @@ export class NavBar extends React.Component {
     });
 
     return (
-      <div className="container">
-        <Navbar light expand="md">
+      <Navbar className="shadow-sm" color="light" light expand="md">
+        <div className="container p-3">
           <NavbarBrand href="/">
-            <img
-              src={require("img/logo.png")}
-              height="30"
-              alt="New New Logo"
-            />
+            <img src={require("img/logo.png")} height="30" alt="New New Logo" />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar={true}>
@@ -92,8 +88,8 @@ export class NavBar extends React.Component {
               {navLinks}
             </Nav>
           </Collapse>
-        </Navbar>
-      </div>
+        </div>
+      </Navbar>
     );
   }
 }
