@@ -20,57 +20,69 @@ export default class Home extends React.Component {
       <div className="container">
         <div className="flex-center">
           <div className="row">
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Atu"
                 image="https://i.imgur.com/9z6f0IY.png"
                 noteableTitle="Sonder Unreleased 01"
                 noteableLink="https://www.youtube.com/watch?v=t6QanTjf0s0"
+                instagram=""
+                soundcloud="alphatmu"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Dpat"
                 image="https://i.imgur.com/CM278ie.jpg"
                 noteableTitle="Sonder Unreleased 05-06"
                 noteableLink="https://www.youtube.com/watch?v=RXfF-bQxPp4"
+                instagram="dpatbeats"
+                soundcloud="dpat"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Brent Faiyaz"
-                image="https://i.imgur.com/HERCJtO.jpg"
+                image="https://i.imgur.com/iZXnraf.jpg"
                 noteableTitle="Poison"
                 noteableLink="https://soundcloud.com/brentfaiyaz/poison-prod-by-ben-free?in=brentfaiyaz/sets/a-m-paradox"
+                instagram="brentfaiyaz"
+                soundcloud="brentfaiyaz"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Blood Orange"
                 image="https://i.imgur.com/Ao40HHG.jpg"
                 noteableTitle="Saint"
                 noteableLink="https://soundcloud.com/bloodorange/saint?in=bloodorange/sets/negro-swan"
+                instagram="bloodorange"
+                soundcloud="bloodorange"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Arin Ray"
                 image="https://i.imgur.com/A6npeZC.jpg"
                 noteableTitle="Stressin"
                 noteableLink="https://soundcloud.com/arin-ray/stressin?in=arin-ray/sets/platinum-fire-1"
+                instagram="arinraycamp"
+                soundcloud="arin-ray"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-4 artist-card">
+            <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Rex Orange County"
                 image="https://i.imgur.com/KCxr908.jpg"
                 noteableTitle="Edition"
                 noteableLink="https://www.youtube.com/watch?v=8ECLpFVE5pE"
+                instagram="rexorangecounty"
+                soundcloud="rexorangecounty"
                 submitter="@bryanbrotonel"
               />
             </div>
