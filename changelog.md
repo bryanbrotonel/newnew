@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Restyled navbar
+- Restyled footer
 
 ## 0.0.4 - 2018-08-27 - 2018-08-29
 ### Added

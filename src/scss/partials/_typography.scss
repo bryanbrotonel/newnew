@@ -1,5 +1,7 @@
 // Link styling
 
+$footer-colour: $black;
+
 .app {
   color: $black;
 }
@@ -13,8 +15,7 @@ a {
   }
 }
 
-// Footer link styling
-.footer,
+// Navbar link styling
 .navbar {
   a {
     &:link,
@@ -24,6 +25,28 @@ a {
       color: $black;
     }
   }
+}
+
+// Footer link styling
+.footer {
+  color: $footer-colour;
+  a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: $footer-colour;
+    }
+  }
+}
+
+.footer-header {
+  color: $secondary;
+  font-weight: bold;
+}
+
+.copyright-footer {
+  color: $primary-two-dark;
 }
 
 // Artist Card styling
