@@ -1,8 +1,10 @@
 import React from "react";
 
-import { SocialIcon } from "components/Social Icon";
+import {Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-import "./styles.css";
+import "./styles.css"
+
+import { SocialIcon } from "components/Social Icon";
 
 export class ArtistCard extends React.Component {
   constructor(props) {
@@ -31,25 +33,22 @@ export class ArtistCard extends React.Component {
     } = this.state;
 
     return (
-      <div className="shadow-lg p-3 mb-5 bg-white rounded card">
-        <img src={`${image}`} alt={`${name}`} className="card-img-top" />
-        <div className="card-body">
-          <div className="card-text">
-            <div>
-              <h5>{`${name}`}</h5>
-            </div>
-            <div>
-              <p>
-                Notable:&#160;
-                <a
-                  href={`${noteableLink}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {`${noteableTitle}`}
-                </a>
-              </p>
-            </div>
+      <div>
+
+        <Card className="shadow-lg p-3 bg-white rounded artist-card">
+          <CardImg top width="100%" src={`${image}`} alt={`${name}`}/>
+          <CardBody>
+            <CardTitle>{`${name}`}</CardTitle>
+            <CardText>
+                  Notable:&#160;
+                  <a
+                    href={`${noteableLink}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {`${noteableTitle}`}
+                  </a>
+            </CardText>
             <div>
               <ul className="list-inline">
                 {instagram.length > 0 && (
@@ -64,13 +63,12 @@ export class ArtistCard extends React.Component {
                   </li>
                 )}
               </ul>
-              <p />
             </div>
-            <p className="text-muted">
-              <small>by {`${submitter}`}</small>
-            </p>
-          </div>
-        </div>
+            <CardText>
+              <small className="text-muted">by {`${submitter}`}</small>
+            </CardText>
+          </CardBody>
+        </Card>
       </div>
     );
   }

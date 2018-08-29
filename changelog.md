@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 - Changed sharing name to handle
+- Changed card to use reactstrap card
 
 ## 0.0.3 - 2018-08-26
 ### Added
