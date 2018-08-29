@@ -35,7 +35,7 @@ export class ArtistCard extends React.Component {
     return (
       <div>
 
-        <Card className="shadow-lg p-3 bg-white rounded artist-card">
+        <Card className="shadow-lg p-3 bg-white rounded">
           <CardImg top width="100%" src={`${image}`} alt={`${name}`}/>
           <CardBody>
             <CardTitle>{`${name}`}</CardTitle>

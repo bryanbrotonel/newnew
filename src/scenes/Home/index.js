@@ -45,7 +45,7 @@ export default class Home extends React.Component {
             <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Brent Faiyaz"
-                image="https://i.imgur.com/iZXnraf.jpg"
+                image="https://i.imgur.com/kpLE9kO.jpg"
                 noteableTitle="Poison"
                 noteableLink="https://soundcloud.com/brentfaiyaz/poison-prod-by-ben-free?in=brentfaiyaz/sets/a-m-paradox"
                 instagram="brentfaiyaz"
@@ -56,7 +56,7 @@ export default class Home extends React.Component {
             <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Blood Orange"
-                image="https://i.imgur.com/Ao40HHG.jpg"
+                image="https://i.imgur.com/MwJ631q.jpg"
                 noteableTitle="Saint"
                 noteableLink="https://soundcloud.com/bloodorange/saint?in=bloodorange/sets/negro-swan"
                 instagram="bloodorange"
@@ -67,7 +67,7 @@ export default class Home extends React.Component {
             <div className="col-sm-6 col-md-4 artist-card">
               <ArtistCard
                 name="Arin Ray"
-                image="https://i.imgur.com/A6npeZC.jpg"
+                image="https://i.imgur.com/YGmKNR5.jpg"
                 noteableTitle="Stressin"
                 noteableLink="https://soundcloud.com/arin-ray/stressin?in=arin-ray/sets/platinum-fire-1"
                 instagram="arinraycamp"

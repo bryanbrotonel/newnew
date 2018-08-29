@@ -9,7 +9,7 @@ export class SocialIcon extends React.Component {
     return (
       <React.Fragment>
         <a href={"https://" + platform + ".com/" + handle} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={["fab", `${platform}`]} size="2x"/>
+            <FontAwesomeIcon icon={["fab", `${platform}`]} size="2x" fixedwidth="true"/>
         </a>
       </React.Fragment>
     );
