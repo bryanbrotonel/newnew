@@ -1,8 +1,8 @@
 import React from "react";
 
-import {Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
 
-import "./styles.css"
+import "./styles.css";
 
 import { SocialIcon } from "components/Social Icon";
 
@@ -33,43 +33,40 @@ export class ArtistCard extends React.Component {
     } = this.state;
 
     return (
-      <div>
+      <Card className="shadow-lg p-3 bg-white rounded">
+        <CardImg top width="100%" src={`${image}`} alt={`${name}`} />
+        <CardBody>
+          <CardTitle>{`${name}`}</CardTitle>
+          <CardText>
+            Notable:&#160;
+            <a
+              href={`${noteableLink}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {`${noteableTitle}`}
+            </a>
+          </CardText>
+          <div>
+            <ul className="list-inline">
+              {instagram.length > 0 && (
+                <li className="list-inline-item">
+                  <SocialIcon handle={`${instagram}`} platform="instagram" />
+                </li>
+              )}
 
-        <Card className="shadow-lg p-3 bg-white rounded">
-          <CardImg top width="100%" src={`${image}`} alt={`${name}`}/>
-          <CardBody>
-            <CardTitle>{`${name}`}</CardTitle>
-            <CardText>
-                  Notable:&#160;
-                  <a
-                    href={`${noteableLink}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {`${noteableTitle}`}
-                  </a>
-            </CardText>
-            <div>
-              <ul className="list-inline">
-                {instagram.length > 0 && (
-                  <li className="list-inline-item">
-                    <SocialIcon handle={`${instagram}`} platform="instagram" />
-                  </li>
-                )}
-
-                {soundcloud.length > 0 && (
-                  <li className="list-inline-item">
-                    <SocialIcon handle={`${soundcloud}`} platform="soundcloud" />
-                  </li>
-                )}
-              </ul>
-            </div>
-            <CardText>
-              <small className="text-muted">by {`${submitter}`}</small>
-            </CardText>
-          </CardBody>
-        </Card>
-      </div>
+              {soundcloud.length > 0 && (
+                <li className="list-inline-item">
+                  <SocialIcon handle={`${soundcloud}`} platform="soundcloud" />
+                </li>
+              )}
+            </ul>
+          </div>
+          <CardText>
+            <small className="text-muted">by {`${submitter}`}</small>
+          </CardText>
+        </CardBody>
+      </Card>
     );
   }
 }

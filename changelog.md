@@ -9,10 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - New New theme colours
 - Body and header font families
 - [Fluid typography](https://css-tricks.com/snippets/css/fluid-typography/)
+- Integrated Firebase into project
+- Integrated Google Analytics to project
+- Retrieved data from Firebase database
 
 ### Changed
 - Restyled navbar
 - Restyled footer
+- Removed parent div from Artist card
 
 ## 0.0.4 - 2018-08-27 - 2018-08-29
 ### Added
