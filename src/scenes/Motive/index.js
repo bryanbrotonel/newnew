@@ -8,7 +8,7 @@ export default class Motive extends React.Component {
 
   componentDidMount() {
     // Change page title
-    document.title = "New New | Motive";
+    document.title = "new new | Motive";
   }
 
   render() {
@@ -16,9 +16,9 @@ export default class Motive extends React.Component {
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="col-sm-12 pb-3">
-            <h4>New New</h4>
+            <h4>new new</h4>
           </div>
-          <div className="col-sm-5">
+          <div className="col-10 col-md-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               nam temporibus perferendis, mollitia itaque veniam qui minima

@@ -12,7 +12,7 @@ export default class Home extends React.Component {
 
   componentDidMount() {
     // Change page title
-    document.title = "New New";
+    document.title = "new new";
   }
 
   render() {
@@ -20,7 +20,7 @@ export default class Home extends React.Component {
       <div className="container">
         <div className="flex-center">
           <div className="row">
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Atu"
                 image="https://i.imgur.com/9z6f0IY.png"
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Dpat"
                 image="https://i.imgur.com/CM278ie.jpg"
@@ -42,7 +42,7 @@ export default class Home extends React.Component {
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Brent Faiyaz"
                 image="https://i.imgur.com/kpLE9kO.jpg"
@@ -53,18 +53,18 @@ export default class Home extends React.Component {
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Blood Orange"
                 image="https://i.imgur.com/MwJ631q.jpg"
                 noteableTitle="Saint"
                 noteableLink="https://soundcloud.com/bloodorange/saint?in=bloodorange/sets/negro-swan"
-                instagram="bloodorange"
+                instagram="devhynes"
                 soundcloud="bloodorange"
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Arin Ray"
                 image="https://i.imgur.com/YGmKNR5.jpg"
@@ -75,7 +75,7 @@ export default class Home extends React.Component {
                 submitter="@bryanbrotonel"
               />
             </div>
-            <div className="col-sm-6 col-md-4 artist-card">
+            <div className="col-12 col-md-6 col-lg-4 artist-card">
               <ArtistCard
                 name="Rex Orange County"
                 image="https://i.imgur.com/KCxr908.jpg"

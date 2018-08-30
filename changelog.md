@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## 0.0.5 - 2018-08-29
 ### Added
 - New New theme colours
+- Body and header font families
+- [Fluid typography](https://css-tricks.com/snippets/css/fluid-typography/)
 
 ### Changed
 - Restyled navbar

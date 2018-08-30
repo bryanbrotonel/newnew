@@ -12,7 +12,7 @@ export default class Share extends React.Component {
 
   componentDidMount() {
     // Change page title
-    document.title = "New New | Share";
+    document.title = "new new | Share";
   }
 
   render() {
