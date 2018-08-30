@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Integrated Firebase into project
 - Integrated Google Analytics to project
 - Retrieved data from Firebase database
+- Added card fade in animation with [Animate.css](https://daneden.github.io/animate.css/)
 
 ### Changed
 - Restyled navbar

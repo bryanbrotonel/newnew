@@ -33,7 +33,7 @@ export class ArtistCard extends React.Component {
     } = this.state;
 
     return (
-      <Card className="shadow-lg p-3 bg-white rounded">
+      <Card className="shadow-lg p-3 bg-white rounded animated fadeIn slower delay-2s">
         <CardImg top width="100%" src={`${image}`} alt={`${name}`} />
         <CardBody>
           <CardTitle>{`${name}`}</CardTitle>
