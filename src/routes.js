@@ -14,8 +14,8 @@ const motiveLoadable = Loadable({
   loading: Loading
 });
 
-const contactLoadable = Loadable({
-  loader: () => import("./scenes/Contact"),
+const ShareLoadable = Loadable({
+  loader: () => import("./scenes/Share"),
   loading: Loading
 })
 
@@ -24,7 +24,7 @@ const Routes = () => (
     <Redirect from="/home" to="/" />
     <Route exact={true} path="/" component={homeLoadable} />
     <Route exact={true} path="/motive" component={motiveLoadable} />
-    <Route exact={true} path="/contact" component={contactLoadable} />
+    <Route exact={true} path="/share" component={ShareLoadable} />
   </Switch>
 );
 

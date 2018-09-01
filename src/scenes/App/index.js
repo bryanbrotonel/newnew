@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Routes from "routes";
 
-import logo from "./../../logo.svg";
-
 import { NavBar } from "components/Navbar";
 import { Footer } from "components/Footer";
 

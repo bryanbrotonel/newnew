@@ -20,7 +20,7 @@ export class NavBar extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.state = {
       isOpen: false,
-      pages: ["home", "motive", "contact"],
+      pages: ["home", "share", "motive"],
       width: 0
     };
   }
@@ -53,12 +53,6 @@ export class NavBar extends React.Component {
     }
   }
 
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth });
   }
@@ -83,17 +77,19 @@ export class NavBar extends React.Component {
     });
 
     return (
-      <div className="container">
-        <Navbar light={true} expand="md">
-          <NavbarBrand href="/">New New</NavbarBrand>
+      <Navbar className="shadow-sm" color="light" light expand="md">
+        <div className="container p-3">
+          <NavbarBrand href="/">
+            <img src={require("img/logo.png")} height="30" alt="New New Logo" />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar={true}>
             <Nav className="ml-auto" navbar={true}>
               {navLinks}
             </Nav>
           </Collapse>
-        </Navbar>
-      </div>
+        </div>
+      </Navbar>
     );
   }
 }

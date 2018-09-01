@@ -2,7 +2,6 @@
 @import "scss/partials/base";
 // Partials
 @import "scss/partials/typography";
-@import "scss/partials/figures";
 
 .app,
 .body,
@@ -13,7 +12,7 @@
 }
 
 .app {
-  background-color: $white;
+  background-color: $primary;
   min-height: 100vh;
 }
 
