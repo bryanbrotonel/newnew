@@ -1,22 +1,21 @@
 import React from "react";
 
 export default class FormInput extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      inputID: this.props.inputID,
-      inputPlaceholder: this.props.inputPlaceholder
-    }
-  }
-
   render() {
-    const {inputID, inputPlaceholder} = this.state;
+    const { inputID, inputPlaceholder, onChange, value } = this.props;
 
     return (
       <div className="form-group">
-        <input type="text" className="form-control" id={`${inputID}`} placeholder={`${inputPlaceholder}`}/>
+        <input
+          type="text"
+          className="form-control"
+          id={`${inputID}`}
+          placeholder={`${inputPlaceholder}`}
+          value={value}
+          onChange={onChange}
+          required
+        />
       </div>
-    )
+    );
   }
 }
