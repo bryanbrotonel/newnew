@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Artist card link colours
 
+### Removed
+- Yarn lock
+
 ## 0.0.5 - 2018-08-29
 ### Added
 - New New theme colours
