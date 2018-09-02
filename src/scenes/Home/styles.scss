@@ -1,0 +1,8 @@
+@import "scss/modules/all";
+
+.artist-card {
+  align-items: stretch;
+  display: flex;
+  min-height: 500px;
+  color: $black;
+}
