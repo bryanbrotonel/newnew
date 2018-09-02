@@ -9,15 +9,11 @@ export class Footer extends React.Component {
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-md-3">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                  deleniti error quia maiores consectetur veritatis quis
-                  quaerat, at voluptatem accusamus fugit nam molestias odit
-                  earum dolor quisquam, quam optio, doloribus?
-                </p>
+                <h6 className="footer-header">NEW NEW</h6>
+                <p>New New is a platform where light is shed on new and upcomming artists.</p>
               </div>
               <div className="col-md-3">
-                <h5 className="footer-header">LINKS</h5>
+                <h6 className="footer-header">LINKS</h6>
                 <ul className="list-unstyled">
                   <li>
                     <a href="./home">Home</a>

@@ -20,19 +20,23 @@ export default class Motive extends React.Component {
           </div>
           <div className="col-10 col-md-5">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-              nam temporibus perferendis, mollitia itaque veniam qui minima
-              molestias officiis necessitatibus dicta nihil recusandae labore
-              ducimus at in ipsum quia. Illum.
+              new new is a platform where I shed light on new artists. Curated
+              by personal taste, this is a collection of the different sounds
+              that I discover from my day to day listening.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-              reiciendis, ipsa. Temporibus quibusdam, officiis molestiae quam
-              voluptate omnis iste tempora voluptatum magnam accusantium!
-              Repellendus possimus enim quos officiis, sed deserunt.
+              Sharing music is one of the greatest gifts we can ever receive.
+              new new allows me to share new refreshing sounds to the world.
             </p>
+            <p>From one listener to another</p>
             <p>
-              <a href="https://bryanbrotonel.me" target="_blank" rel="noopener noreferrer">@bryanbrotonel</a>
+              <a
+                href="https://bryanbrotonel.me"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @bryanbrotonel
+              </a>
             </p>
           </div>
         </div>

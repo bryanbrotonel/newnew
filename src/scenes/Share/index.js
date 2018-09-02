@@ -100,14 +100,12 @@ export default class Share extends React.Component {
                 </h5>
               </div>
               <div>
-                <h6>Sharing music is for the soul.</h6>
                 <p>
                   From one listener to another, let's share music. Drop your
                   current favourite artist and your favourite work from them,
                   and I'll add it to the New New collection. Also, don't forget
                   to drop your handle so I can shout you out.
                 </p>
-                <p>Love.</p>
               </div>
             </div>
           </div>
@@ -130,7 +128,7 @@ export default class Share extends React.Component {
                     />
                     <FormInput
                       inputID="handle"
-                      inputPlaceholder="Your Name"
+                      inputPlaceholder="Your Handle"
                       onChange={this.handleFormChange}
                       value={handle}
                     />
