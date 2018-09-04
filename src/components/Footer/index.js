@@ -10,7 +10,7 @@ export class Footer extends React.Component {
             <div className="row justify-content-between">
               <div className="col-md-3">
                 <h6 className="footer-header">NEW NEW</h6>
-                <p>New New is a platform where light is shed on new and upcomming artists.</p>
+                <p>New New is a platform where light is shed on new and upcoming artists.</p>
               </div>
               <div className="col-md-3">
                 <h6 className="footer-header">LINKS</h6>
