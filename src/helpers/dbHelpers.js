@@ -3,10 +3,13 @@ import "firebase/database";
 
 function formatDate(date) {
   var day = date.getDate();
-  var monthIndex = date.getMonth();
-  var year = date.getYear();
+  var month = date.getMonth();
+  var year = date
+    .getYear()
+    .toString()
+    .substring(1);
 
-  return day + "/" + ("0" + (monthIndex + 1)).slice(-2) + "/" + year;
+  return day + "/" + ("0" + (month + 1)).slice(-2) + "/" + year;
 }
 
 // Get post data for all posts
@@ -45,7 +48,8 @@ export function getArtists(artistsData) {
               parseInt(
                 artistSnapshot
                   .val()["posted"].toString()
-                  .substring(1), 10
+                  .substring(1),
+                10
               )
             )
           );
