@@ -6,20 +6,7 @@ import "./styles.css";
 
 import { SocialIcon } from "components/Social Icon";
 
-export class ArtistCard extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      name: props.name,
-      image: props.image,
-      noteableTitle: props.noteableTitle,
-      noteableLink: props.noteableLink,
-      instagram: props.instagram,
-      soundcloud: props.soundcloud,
-      submitter: props.submitter
-    };
-  }
+export default class ArtistCard extends React.Component {
 
   render() {
     const {
@@ -29,11 +16,13 @@ export class ArtistCard extends React.Component {
       noteableLink,
       instagram,
       soundcloud,
-      submitter
-    } = this.state;
+      submitter,
+      timeStamp
+
+    } = this.props;
 
     return (
-      <Card className="shadow-lg p-3 bg-white rounded animated fadeIn slower delay-2s">
+      <Card className="shadow-l p-3 bg-white rounded animated fadeIn slower delay-2s">
         <CardImg top width="100%" src={`${image}`} alt={`${name}`} />
         <CardBody>
           <CardTitle>{`${name}`}</CardTitle>
@@ -64,6 +53,8 @@ export class ArtistCard extends React.Component {
           </div>
           <CardText>
             <small className="text-muted">by {`${submitter}`}</small>
+            <br/>
+            <small className="text-muted">{`${timeStamp}`}</small>
           </CardText>
         </CardBody>
       </Card>
