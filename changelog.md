@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Home page styling
 - Home page chronological order
 - Typography sizing
-
+- Post timestamp formatting
 
 ## 0.0.5 - 2018-08-29
 ### Added
