@@ -1,9 +1,10 @@
 import React from "react";
 
-import firebase from "firebase/app";
-import "firebase/database";
+import Loadable from "react-loadable";
 
-import { ArtistCard } from "components/ArtistCard";
+import Loading from "components/Loading";
+
+import { getPosts, getArtists } from "helpers/dbHelpers";
 
 import "./styles.css";
 
@@ -16,8 +17,6 @@ export default class Home extends React.Component {
     };
 
     this.componentDidMount = this.componentDidMount.bind(this);
-    this.getPosts = this.getPosts.bind(this);
-    this.getArtists = this.getArtists.bind(this);
   }
 
   componentDidMount() {
@@ -26,12 +25,11 @@ export default class Home extends React.Component {
     // Change page title
     document.title = "new new";
 
-    this.getPosts()
+    getPosts()
       .then(function(posts) {
-        return self.getArtists(posts);
+        return getArtists(posts);
       })
       .then(function(artistPosts) {
-
         // Set state with all posts
         self.setState({
           posts: artistPosts
@@ -39,76 +37,31 @@ export default class Home extends React.Component {
       });
   }
 
-  // Get post data for all posts
-  getPosts() {
-    return new Promise(function(resolve, reject) {
-
-      // Firebase post data reference
-      firebase
-        .database()
-        .ref("artists/artists_list")
-        .orderByChild("posted")
-        .once("value", function(snapshot) {
-          console.log(snapshot.val());
-          return snapshot ? resolve(snapshot) : reject(snapshot);
-        });
-    });
-  }
-
-  // Get artist data for all artists
-  getArtists(snapshot) {
-    const self = this;
-    self.posts = [];
-
-    return new Promise(function(resolve, reject) {
-
-      // Firebase artists data reference
-      firebase
-        .database()
-        .ref("artists/posts")
-        .once("value", function(snapshot) {
-          const postData = snapshot.val();
-
-          // For each loop iterating each post key
-          snapshot.forEach(function(childSnapshot) {
-            const artistData = postData[childSnapshot.key];
-
-            // Store data snapshot in object
-            const artistItem = {
-              name: artistData.name,
-              image: artistData.image,
-              notableTitle: artistData.notableTitle,
-              notableLink: artistData.notableLink,
-              instagram: artistData.instagram,
-              soundcloud: artistData.soundcloud
-            };
-
-            // Add to posts array
-            self.posts.push(artistItem);
-
-            // Return with posts array
-            return self.posts ? resolve(self.posts) : reject(self.posts);
-          });
-        });
-    });
-  }
-
   render() {
-    console.log("rendered posts", this.state.posts);
+    // Creating artist card loadable
+    const ArtistCardLoadable = Loadable({
+      loader: () => import("components/ArtistCard"),
+      render(loaded, props) {
+        let Component = loaded.default;
+        return <Component {...props} />;
+      },
+      loading: Loading
+    });
 
     const posts = this.state.posts.map(artist => (
       <div
-        className="col-12 col-md-6 col-lg-4 artist-card"
+        className="col-10 col-md-6 col-lg-4 artist-card"
         key={`${artist.name}`}
       >
-        <ArtistCard
+        <ArtistCardLoadable
           name={`${artist.name}`}
           image={`${artist.image}`}
           noteableTitle={`${artist.notableTitle}`}
           noteableLink={`${artist.notableLink}`}
           instagram={`${artist.instagram}`}
           soundcloud={`${artist.soundcloud}`}
-          submitter="@bryanbrotonel"
+          submitter={`${artist.submitter}`}
+          timeStamp={`${artist.timeStamp}`}
         />
       </div>
     ));
@@ -116,7 +69,7 @@ export default class Home extends React.Component {
     return (
       <div className="container">
         <div className="flex-center">
-          <div className="row">{posts}</div>
+          <div className="row justify-content-center">{posts}</div>
         </div>
       </div>
     );
